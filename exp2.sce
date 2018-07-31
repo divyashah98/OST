@@ -9,5 +9,10 @@ for n=1:length(x)
 end
 end
 disp(v);
-disp(ceil(v))
-
+dft=round(v);
+v1=abs(dft)
+disp(dft);
+k=1:length(x);
+a=gca();
+a.data_bounds=[0,0;4,10]
+plot2d3(k,v1)
